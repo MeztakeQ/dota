@@ -1,0 +1,152 @@
+@import 'global';
+
+.header{
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  background-attachment: fixed;
+ 
+
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+
+}
+
+.header__list-link {
+  color: #fff;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all .5s;
+
+  &:hover{
+    color: rgb(255, 0, 0);
+
+  }
+
+}
+
+
+.header__logo-img{
+  width: 100px;
+}
+.header__list{
+    display: flex;
+}
+.header__nav .header__submenu {
+ 
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  background-color: rgba(0, 0, 0, 0.36);
+  border-radius: 11px ;
+  transition: all .5s;
+  width: 181px;
+  min-height: 251px;
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  //   -webkit-transform-origin: 0 0;
+//   -ms-transform-origin: 0 0;
+//   -webkit-transform: scaleY(0);
+//   -ms-transform: scaleY(0);
+}
+.header__nav .header__list .header__list-item:hover .header__submenu {
+
+  transform: scaleY(1);
+}
+
+.header__list > .header__list-item{
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.header__submenu-link{
+  margin-left: 10px;
+  text-transform: uppercase;
+  color: #ffff;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  transition: all .5s;
+
+  &:hover{
+    color: rgb(255, 0, 0);
+
+  }
+}
+
+.header__submenu-item{
+  border-bottom: 1px solid #433D4E;
+  display: block;
+  &:last-child{
+    border-bottom: 0;
+  }
+}
+
+.header__top-link{
+  padding: 15px 70px;
+  
+}
+
+
+.header__content  {
+  text-align: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+   padding-top: 120px ;
+
+}
+.header__info{
+  width: 740px;
+}
+.header__info-title{
+  font-size: 41px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 48px;
+  margin-bottom: 11px;
+  width: 540px;
+  margin: 0 auto;
+}
+.header__info-text {
+  display: block;
+  font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+margin-bottom: 40px;
+}
+.header__info-link {
+display: inline-block; 
+}
+
+
+.slider-top{
+  overflow: hidden;
+}
+.slider__item{
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align:bottom
+
+
+
+}
+
+
+
+
+
+		
+		
